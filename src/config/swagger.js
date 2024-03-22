@@ -9,9 +9,14 @@ const options = {
             version: '1.0',
             description: 'Api realizada con Node, Express, MongoDB'
         },
-        servers: [{
-            url: 'http://localhost:3000'
-        }]
+        servers: [
+            {
+                url: 'http://localhost:3000'
+            },
+            {
+                url: 'https://desafio-nodejs-02da.onrender.com'
+            }
+        ]
     },
     // Ruta relativa al archivo de configuración Swagger
     apis: [path.join(__dirname, '../routes/products.js')],
