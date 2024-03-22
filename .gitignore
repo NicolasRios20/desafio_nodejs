@@ -3,3 +3,6 @@ node_modules/
 
 # Ignorar archivos generados por npm
 npm-debug.log
+
+# Ignorar archivos de configuración
+.env

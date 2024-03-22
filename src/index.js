@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const connectDB = require('./config/database');
 const productsRoutes = require('./routes/products');
@@ -10,7 +11,7 @@ const swaggerDocument = require('./config/swagger');
 
 // configuracion
 const app = express();
-const port = process.envPORT || 3000;
+const port = process.env.PORT;
 
 
 // middelwares
